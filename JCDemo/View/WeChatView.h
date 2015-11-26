@@ -1,5 +1,5 @@
 //
-//  FirstViewController.h
+//  WeChatView.h
 //  JCDemo
 //
 //  Created by mac on 15/11/20.
@@ -8,8 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+IB_DESIGNABLE
 
+@interface WeChatView : UIView
+
+@property (nonatomic, strong) IBInspectable UIColor *bkColor;
 
 @end
-

@@ -7,10 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04844E1C1C05548E00DC7A51 /* WeChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E1B1C05548E00DC7A51 /* WeChatView.m */; settings = {ASSET_TAGS = (); }; };
+		04844E1F1C0554A500DC7A51 /* FingerBallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E1E1C0554A500DC7A51 /* FingerBallView.m */; settings = {ASSET_TAGS = (); }; };
+		04844E251C055C9C00DC7A51 /* JCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E221C055C9C00DC7A51 /* JCFirstViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04844E261C055C9C00DC7A51 /* JCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E241C055C9C00DC7A51 /* JCSecondViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04844E291C055E0E00DC7A51 /* JCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E281C055E0E00DC7A51 /* JCHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04844E2C1C05606400DC7A51 /* JCFingerballViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E2B1C05606400DC7A51 /* JCFingerballViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04844E2F1C0566E400DC7A51 /* RatingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E2E1C0566E400DC7A51 /* RatingBar.m */; settings = {ASSET_TAGS = (); }; };
+		04844E321C0566F500DC7A51 /* JCRatingBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E311C0566F500DC7A51 /* JCRatingBarViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04844E3E1C06B8DB00DC7A51 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E3D1C06B8DB00DC7A51 /* CTDisplayView.m */; settings = {ASSET_TAGS = (); }; };
+		04844E411C06BFDD00DC7A51 /* JCScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E401C06BFDD00DC7A51 /* JCScrollViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04844E441C06D5C300DC7A51 /* JCCoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E431C06D5C300DC7A51 /* JCCoreTextViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04844E471C06EEC500DC7A51 /* DragableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E461C06EEC500DC7A51 /* DragableView.m */; settings = {ASSET_TAGS = (); }; };
+		04844E4A1C06EF7800DC7A51 /* JCDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E491C06EF7800DC7A51 /* JCDragViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04844E501C07024E00DC7A51 /* JCCircleSiderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E4F1C07024E00DC7A51 /* JCCircleSiderViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04844E531C07027400DC7A51 /* CircleSiderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E521C07027400DC7A51 /* CircleSiderView.m */; settings = {ASSET_TAGS = (); }; };
 		049BCC881BFEF3EC004E93AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 049BCC871BFEF3EC004E93AC /* main.m */; };
-		049BCC8B1BFEF3EE004E93AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049BCC8A1BFEF3EE004E93AC /* AppDelegate.m */; };
-		049BCC8E1BFEF3EE004E93AC /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049BCC8D1BFEF3EE004E93AC /* FirstViewController.m */; };
-		049BCC911BFEF3EE004E93AC /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 049BCC901BFEF3EE004E93AC /* SecondViewController.m */; };
+		049BCC8B1BFEF3EE004E93AC /* JCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049BCC8A1BFEF3EE004E93AC /* JCAppDelegate.m */; };
 		049BCC941BFEF3EE004E93AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049BCC921BFEF3EE004E93AC /* Main.storyboard */; };
 		049BCC961BFEF3EE004E93AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049BCC951BFEF3EE004E93AC /* Assets.xcassets */; };
 		049BCC991BFEF3EE004E93AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049BCC971BFEF3EE004E93AC /* LaunchScreen.storyboard */; };
@@ -36,14 +49,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		04844E1A1C05548E00DC7A51 /* WeChatView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeChatView.h; sourceTree = "<group>"; };
+		04844E1B1C05548E00DC7A51 /* WeChatView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeChatView.m; sourceTree = "<group>"; };
+		04844E1D1C0554A500DC7A51 /* FingerBallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FingerBallView.h; sourceTree = "<group>"; };
+		04844E1E1C0554A500DC7A51 /* FingerBallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FingerBallView.m; sourceTree = "<group>"; };
+		04844E211C055C9C00DC7A51 /* JCFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCFirstViewController.h; sourceTree = "<group>"; };
+		04844E221C055C9C00DC7A51 /* JCFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCFirstViewController.m; sourceTree = "<group>"; };
+		04844E231C055C9C00DC7A51 /* JCSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCSecondViewController.h; sourceTree = "<group>"; };
+		04844E241C055C9C00DC7A51 /* JCSecondViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCSecondViewController.m; sourceTree = "<group>"; };
+		04844E271C055E0E00DC7A51 /* JCHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCHomeViewController.h; sourceTree = "<group>"; };
+		04844E281C055E0E00DC7A51 /* JCHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCHomeViewController.m; sourceTree = "<group>"; };
+		04844E2A1C05606400DC7A51 /* JCFingerballViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCFingerballViewController.h; sourceTree = "<group>"; };
+		04844E2B1C05606400DC7A51 /* JCFingerballViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCFingerballViewController.m; sourceTree = "<group>"; };
+		04844E2D1C0566E400DC7A51 /* RatingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RatingBar.h; sourceTree = "<group>"; };
+		04844E2E1C0566E400DC7A51 /* RatingBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingBar.m; sourceTree = "<group>"; };
+		04844E301C0566F500DC7A51 /* JCRatingBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRatingBarViewController.h; sourceTree = "<group>"; };
+		04844E311C0566F500DC7A51 /* JCRatingBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRatingBarViewController.m; sourceTree = "<group>"; };
+		04844E3C1C06B8DB00DC7A51 /* CTDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
+		04844E3D1C06B8DB00DC7A51 /* CTDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
+		04844E3F1C06BFDD00DC7A51 /* JCScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCScrollViewController.h; sourceTree = "<group>"; };
+		04844E401C06BFDD00DC7A51 /* JCScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCScrollViewController.m; sourceTree = "<group>"; };
+		04844E421C06D5C300DC7A51 /* JCCoreTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCoreTextViewController.h; sourceTree = "<group>"; };
+		04844E431C06D5C300DC7A51 /* JCCoreTextViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCoreTextViewController.m; sourceTree = "<group>"; };
+		04844E451C06EEC400DC7A51 /* DragableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragableView.h; sourceTree = "<group>"; };
+		04844E461C06EEC500DC7A51 /* DragableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragableView.m; sourceTree = "<group>"; };
+		04844E481C06EF7800DC7A51 /* JCDragViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDragViewController.h; sourceTree = "<group>"; };
+		04844E491C06EF7800DC7A51 /* JCDragViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDragViewController.m; sourceTree = "<group>"; };
+		04844E4E1C07024E00DC7A51 /* JCCircleSiderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCircleSiderViewController.h; sourceTree = "<group>"; };
+		04844E4F1C07024E00DC7A51 /* JCCircleSiderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCCircleSiderViewController.m; sourceTree = "<group>"; };
+		04844E511C07027400DC7A51 /* CircleSiderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleSiderView.h; sourceTree = "<group>"; };
+		04844E521C07027400DC7A51 /* CircleSiderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleSiderView.m; sourceTree = "<group>"; };
 		049BCC831BFEF3EB004E93AC /* JCDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JCDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		049BCC871BFEF3EC004E93AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		049BCC891BFEF3EE004E93AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		049BCC8A1BFEF3EE004E93AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		049BCC8C1BFEF3EE004E93AC /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		049BCC8D1BFEF3EE004E93AC /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		049BCC8F1BFEF3EE004E93AC /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		049BCC901BFEF3EE004E93AC /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		049BCC891BFEF3EE004E93AC /* JCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCAppDelegate.h; sourceTree = "<group>"; };
+		049BCC8A1BFEF3EE004E93AC /* JCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCAppDelegate.m; sourceTree = "<group>"; };
 		049BCC931BFEF3EE004E93AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		049BCC951BFEF3EE004E93AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		049BCC981BFEF3EE004E93AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -81,6 +120,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04844E191C05548E00DC7A51 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04844E1A1C05548E00DC7A51 /* WeChatView.h */,
+				04844E1B1C05548E00DC7A51 /* WeChatView.m */,
+				04844E1D1C0554A500DC7A51 /* FingerBallView.h */,
+				04844E1E1C0554A500DC7A51 /* FingerBallView.m */,
+				04844E2D1C0566E400DC7A51 /* RatingBar.h */,
+				04844E2E1C0566E400DC7A51 /* RatingBar.m */,
+				04844E451C06EEC400DC7A51 /* DragableView.h */,
+				04844E461C06EEC500DC7A51 /* DragableView.m */,
+				04844E511C07027400DC7A51 /* CircleSiderView.h */,
+				04844E521C07027400DC7A51 /* CircleSiderView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04844E201C055C9C00DC7A51 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				04844E271C055E0E00DC7A51 /* JCHomeViewController.h */,
+				04844E281C055E0E00DC7A51 /* JCHomeViewController.m */,
+				04844E211C055C9C00DC7A51 /* JCFirstViewController.h */,
+				04844E221C055C9C00DC7A51 /* JCFirstViewController.m */,
+				04844E231C055C9C00DC7A51 /* JCSecondViewController.h */,
+				04844E241C055C9C00DC7A51 /* JCSecondViewController.m */,
+				04844E2A1C05606400DC7A51 /* JCFingerballViewController.h */,
+				04844E2B1C05606400DC7A51 /* JCFingerballViewController.m */,
+				04844E301C0566F500DC7A51 /* JCRatingBarViewController.h */,
+				04844E311C0566F500DC7A51 /* JCRatingBarViewController.m */,
+				04844E3F1C06BFDD00DC7A51 /* JCScrollViewController.h */,
+				04844E401C06BFDD00DC7A51 /* JCScrollViewController.m */,
+				04844E421C06D5C300DC7A51 /* JCCoreTextViewController.h */,
+				04844E431C06D5C300DC7A51 /* JCCoreTextViewController.m */,
+				04844E481C06EF7800DC7A51 /* JCDragViewController.h */,
+				04844E491C06EF7800DC7A51 /* JCDragViewController.m */,
+				04844E4E1C07024E00DC7A51 /* JCCircleSiderViewController.h */,
+				04844E4F1C07024E00DC7A51 /* JCCircleSiderViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		04844E3B1C06B8DB00DC7A51 /* CoreText */ = {
+			isa = PBXGroup;
+			children = (
+				04844E3C1C06B8DB00DC7A51 /* CTDisplayView.h */,
+				04844E3D1C06B8DB00DC7A51 /* CTDisplayView.m */,
+			);
+			path = CoreText;
+			sourceTree = "<group>";
+		};
 		049BCC7A1BFEF3EA004E93AC = {
 			isa = PBXGroup;
 			children = (
@@ -104,12 +194,11 @@
 		049BCC851BFEF3EC004E93AC /* JCDemo */ = {
 			isa = PBXGroup;
 			children = (
-				049BCC891BFEF3EE004E93AC /* AppDelegate.h */,
-				049BCC8A1BFEF3EE004E93AC /* AppDelegate.m */,
-				049BCC8C1BFEF3EE004E93AC /* FirstViewController.h */,
-				049BCC8D1BFEF3EE004E93AC /* FirstViewController.m */,
-				049BCC8F1BFEF3EE004E93AC /* SecondViewController.h */,
-				049BCC901BFEF3EE004E93AC /* SecondViewController.m */,
+				04844E201C055C9C00DC7A51 /* Controllers */,
+				04844E191C05548E00DC7A51 /* View */,
+				04844E3B1C06B8DB00DC7A51 /* CoreText */,
+				049BCC891BFEF3EE004E93AC /* JCAppDelegate.h */,
+				049BCC8A1BFEF3EE004E93AC /* JCAppDelegate.m */,
 				049BCC921BFEF3EE004E93AC /* Main.storyboard */,
 				049BCC951BFEF3EE004E93AC /* Assets.xcassets */,
 				049BCC971BFEF3EE004E93AC /* LaunchScreen.storyboard */,
@@ -207,11 +296,13 @@
 		049BCC7B1BFEF3EA004E93AC /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = JC;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = Jcdroid;
 				TargetAttributes = {
 					049BCC821BFEF3EB004E93AC = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = JLJW949Z96;
 					};
 					049BCC9E1BFEF3EE004E93AC = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -275,10 +366,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				049BCC911BFEF3EE004E93AC /* SecondViewController.m in Sources */,
-				049BCC8B1BFEF3EE004E93AC /* AppDelegate.m in Sources */,
-				049BCC8E1BFEF3EE004E93AC /* FirstViewController.m in Sources */,
+				04844E441C06D5C300DC7A51 /* JCCoreTextViewController.m in Sources */,
+				04844E291C055E0E00DC7A51 /* JCHomeViewController.m in Sources */,
+				04844E2C1C05606400DC7A51 /* JCFingerballViewController.m in Sources */,
+				04844E261C055C9C00DC7A51 /* JCSecondViewController.m in Sources */,
+				04844E471C06EEC500DC7A51 /* DragableView.m in Sources */,
+				04844E1C1C05548E00DC7A51 /* WeChatView.m in Sources */,
+				049BCC8B1BFEF3EE004E93AC /* JCAppDelegate.m in Sources */,
+				04844E251C055C9C00DC7A51 /* JCFirstViewController.m in Sources */,
+				04844E321C0566F500DC7A51 /* JCRatingBarViewController.m in Sources */,
+				04844E1F1C0554A500DC7A51 /* FingerBallView.m in Sources */,
+				04844E4A1C06EF7800DC7A51 /* JCDragViewController.m in Sources */,
+				04844E3E1C06B8DB00DC7A51 /* CTDisplayView.m in Sources */,
+				04844E2F1C0566E400DC7A51 /* RatingBar.m in Sources */,
+				04844E501C07024E00DC7A51 /* JCCircleSiderViewController.m in Sources */,
+				04844E411C06BFDD00DC7A51 /* JCScrollViewController.m in Sources */,
 				049BCC881BFEF3EC004E93AC /* main.m in Sources */,
+				04844E531C07027400DC7A51 /* CircleSiderView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,10 +523,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = JCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcdroid.JCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -430,10 +538,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = JCDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jcdroid.JCDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -504,6 +616,7 @@
 				049BCCB51BFEF3EF004E93AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		049BCCB61BFEF3EF004E93AC /* Build configuration list for PBXNativeTarget "JCDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +625,7 @@
 				049BCCB81BFEF3EF004E93AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		049BCCB91BFEF3EF004E93AC /* Build configuration list for PBXNativeTarget "JCDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +634,7 @@
 				049BCCBB1BFEF3EF004E93AC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

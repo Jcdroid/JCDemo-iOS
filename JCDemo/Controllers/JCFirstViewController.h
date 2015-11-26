@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  JCFirstViewController.h
 //  JCDemo
 //
 //  Created by mac on 15/11/20.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
+@interface JCFirstViewController : UIViewController
 
 
 @end

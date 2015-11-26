@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  JCAppDelegate.h
 //  JCDemo
 //
 //  Created by mac on 15/11/20.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface JCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
