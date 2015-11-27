@@ -17,4 +17,15 @@
 
 @implementation JCCircleSiderViewController
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    [_circleSiderView addTarget:self action:@selector(changed:) forControlEvents:UIControlEventValueChanged];
+}
+
+- (void)changed:(id)sender {
+    CircleSiderView *circleSiderView = sender;
+    NSLog(@"%0.2f", circleSiderView.angle);
+}
+
 @end

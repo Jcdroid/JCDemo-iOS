@@ -2,6 +2,8 @@
 //  CircleSiderView.h
 //  JCDemo
 //
+//  http://www.thinkandbuild.it/how-to-build-a-custom-control-in-ios/
+//
 //  http://beyondvincent.com/2014/01/20/2014-01-20-how-to-build-a-custom-control-in-ios/
 //
 //  Created by mac on 15/11/26.
