@@ -73,6 +73,41 @@
             </objects>
             <point key="canvasLocation" x="2282" y="-999"/>
         </scene>
+        <!--Button View Controller-->
+        <scene sceneID="JhN-sz-RdQ">
+            <objects>
+                <viewController storyboardIdentifier="JCButtonViewController" id="hUd-Vm-mo3" customClass="JCButtonViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TzX-fZ-cEp"/>
+                        <viewControllerLayoutGuide type="bottom" id="2T3-Xc-lk6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wDK-dG-ESh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qYC-y5-kAY" customClass="JCButton">
+                                <rect key="frame" x="60" y="100" width="480" height="60"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="wrJ-MN-d16"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qYC-y5-kAY" firstAttribute="top" secondItem="TzX-fZ-cEp" secondAttribute="bottom" constant="80" id="ViF-xD-X3y"/>
+                            <constraint firstItem="qYC-y5-kAY" firstAttribute="leading" secondItem="wDK-dG-ESh" secondAttribute="leading" constant="60" id="p7Z-uG-T3s"/>
+                            <constraint firstAttribute="trailing" secondItem="qYC-y5-kAY" secondAttribute="trailing" constant="60" id="wfW-jz-OMZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="jcButton" destination="qYC-y5-kAY" id="DUk-5c-3TI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K7h-yv-Mhc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2282" y="-278"/>
+        </scene>
         <!--Circle Sider View Controller-->
         <scene sceneID="QPb-76-rOQ">
             <objects>

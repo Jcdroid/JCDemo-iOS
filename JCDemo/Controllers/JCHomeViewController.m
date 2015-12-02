@@ -12,6 +12,8 @@
 #import "JCCoreTextViewController.h"
 #import "JCDragViewController.h"
 #import "JCCircleSiderViewController.h"
+#import "JCButtonViewController.h"
+#import "JCHamburgerViewController.h"
 
 static NSString * const kIdentifierHomeCell = @"HomeCell";
 
@@ -37,6 +39,8 @@ static NSString * const kIdentifierHomeCell = @"HomeCell";
     [self addName:@"CoreText" className:@"JCCoreTextViewController" isNibs:YES];
     [self addName:@"拖拽（探探）" className:@"JCDragViewController" isNibs:YES];
     [self addName:@"圆盘进度条控制器" className:@"JCCircleSiderViewController" isNibs:YES];
+    [self addName:@"自定义Button" className:@"JCButtonViewController" isNibs:YES];
+    [self addName:@"HamburgerView" className:@"JCHamburgerViewController" isNibs:NO];
 }
 
 - (void)addName:(NSString *)name className:(NSString *)className isNibs:(BOOL)isNib {
