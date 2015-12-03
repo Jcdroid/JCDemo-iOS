@@ -14,6 +14,7 @@
 #import "JCCircleSiderViewController.h"
 #import "JCButtonViewController.h"
 #import "JCHamburgerViewController.h"
+#import "JCMapDrawLineViewController.h"
 
 static NSString * const kIdentifierHomeCell = @"HomeCell";
 
@@ -41,6 +42,7 @@ static NSString * const kIdentifierHomeCell = @"HomeCell";
     [self addName:@"圆盘进度条控制器" className:@"JCCircleSiderViewController" isNibs:YES];
     [self addName:@"自定义Button" className:@"JCButtonViewController" isNibs:YES];
     [self addName:@"HamburgerView" className:@"JCHamburgerViewController" isNibs:NO];
+    [self addName:@"MapDrawLine" className:@"JCMapDrawLineViewController" isNibs:YES];
 }
 
 - (void)addName:(NSString *)name className:(NSString *)className isNibs:(BOOL)isNib {
@@ -72,9 +74,11 @@ static NSString * const kIdentifierHomeCell = @"HomeCell";
     
     NSNumber *number = self.isNibs[indexPath.row];
     UIViewController *vc;
-    if (number.boolValue) {
+    if (number.boolValue)
+    {// on storyboard
         vc = [self.storyboard instantiateViewControllerWithIdentifier:self.classNames[indexPath.row]];
-    } else {
+    } else
+    {// no storyboard
         Class class = NSClassFromString(self.classNames[indexPath.row]);
         if (class) {
             vc = class.new;

@@ -73,6 +73,60 @@
             </objects>
             <point key="canvasLocation" x="2282" y="-999"/>
         </scene>
+        <!--Delegate-->
+        <scene sceneID="BjH-0C-z24">
+            <objects>
+                <viewController storyboardIdentifier="JCMapDrawLineViewController" id="0xx-Mc-x0F" customClass="JCMapDrawLineViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XqN-7y-fF2"/>
+                        <viewControllerLayoutGuide type="bottom" id="141-C8-uaC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jGG-8C-6C6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="eRB-dD-gWa">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <connections>
+                                    <outlet property="delegate" destination="0xx-Mc-x0F" id="zLz-cO-7SJ"/>
+                                </connections>
+                            </mapView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4e8-pO-CK3" customClass="JCPlayControlView">
+                                <rect key="frame" x="20" y="550" width="560" height="30"/>
+                                <color key="backgroundColor" red="0.01104013261" green="0.58534588519999997" blue="0.81003289469999995" alpha="0.25" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="ncg-aJ-Z5C"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="totalTime">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outlet property="delegate" destination="0xx-Mc-x0F" id="HFK-TE-La5"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eRB-dD-gWa" firstAttribute="leading" secondItem="jGG-8C-6C6" secondAttribute="leading" id="8er-k5-Q17"/>
+                            <constraint firstAttribute="trailing" secondItem="4e8-pO-CK3" secondAttribute="trailing" constant="20" id="F4B-eu-omb"/>
+                            <constraint firstItem="4e8-pO-CK3" firstAttribute="leading" secondItem="jGG-8C-6C6" secondAttribute="leading" constant="20" id="FJG-Ct-BPY"/>
+                            <constraint firstAttribute="trailing" secondItem="eRB-dD-gWa" secondAttribute="trailing" id="JYQ-Ko-V0N"/>
+                            <constraint firstItem="eRB-dD-gWa" firstAttribute="top" secondItem="XqN-7y-fF2" secondAttribute="bottom" id="ecQ-Vg-0s0"/>
+                            <constraint firstItem="141-C8-uaC" firstAttribute="top" secondItem="eRB-dD-gWa" secondAttribute="bottom" id="rdk-S0-QfY"/>
+                            <constraint firstItem="141-C8-uaC" firstAttribute="top" secondItem="4e8-pO-CK3" secondAttribute="bottom" constant="20" id="tQy-aS-cUd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="eRB-dD-gWa" id="5oN-ka-gRa"/>
+                        <outlet property="playControlView" destination="4e8-pO-CK3" id="7U6-eV-gW9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xMC-Hi-32r" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1562" y="-320"/>
+        </scene>
         <!--Button View Controller-->
         <scene sceneID="JhN-sz-RdQ">
             <objects>
