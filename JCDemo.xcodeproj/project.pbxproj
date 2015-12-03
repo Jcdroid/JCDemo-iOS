@@ -21,7 +21,6 @@
 		04844E2C1C05606400DC7A51 /* JCFingerballViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E2B1C05606400DC7A51 /* JCFingerballViewController.m */; settings = {ASSET_TAGS = (); }; };
 		04844E2F1C0566E400DC7A51 /* RatingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E2E1C0566E400DC7A51 /* RatingBar.m */; settings = {ASSET_TAGS = (); }; };
 		04844E321C0566F500DC7A51 /* JCRatingBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E311C0566F500DC7A51 /* JCRatingBarViewController.m */; settings = {ASSET_TAGS = (); }; };
-		04844E3E1C06B8DB00DC7A51 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E3D1C06B8DB00DC7A51 /* CTDisplayView.m */; settings = {ASSET_TAGS = (); }; };
 		04844E411C06BFDD00DC7A51 /* JCScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E401C06BFDD00DC7A51 /* JCScrollViewController.m */; settings = {ASSET_TAGS = (); }; };
 		04844E441C06D5C300DC7A51 /* JCCoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E431C06D5C300DC7A51 /* JCCoreTextViewController.m */; settings = {ASSET_TAGS = (); }; };
 		04844E471C06EEC500DC7A51 /* DragableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E461C06EEC500DC7A51 /* DragableView.m */; settings = {ASSET_TAGS = (); }; };
@@ -37,6 +36,7 @@
 		04C81E4D1C0D9800005EAB15 /* JCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C81E4C1C0D9800005EAB15 /* JCButton.m */; settings = {ASSET_TAGS = (); }; };
 		04C81E501C0D9893005EAB15 /* JCButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C81E4F1C0D9893005EAB15 /* JCButtonViewController.m */; settings = {ASSET_TAGS = (); }; };
 		04C81E531C0EABDB005EAB15 /* HamburgerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C81E521C0EABDB005EAB15 /* HamburgerView.m */; settings = {ASSET_TAGS = (); }; };
+		04F926271C10131E001CAEB4 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F926261C10131E001CAEB4 /* CTDisplayView.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,8 +82,6 @@
 		04844E2E1C0566E400DC7A51 /* RatingBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RatingBar.m; sourceTree = "<group>"; };
 		04844E301C0566F500DC7A51 /* JCRatingBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRatingBarViewController.h; sourceTree = "<group>"; };
 		04844E311C0566F500DC7A51 /* JCRatingBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRatingBarViewController.m; sourceTree = "<group>"; };
-		04844E3C1C06B8DB00DC7A51 /* CTDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
-		04844E3D1C06B8DB00DC7A51 /* CTDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
 		04844E3F1C06BFDD00DC7A51 /* JCScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCScrollViewController.h; sourceTree = "<group>"; };
 		04844E401C06BFDD00DC7A51 /* JCScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCScrollViewController.m; sourceTree = "<group>"; };
 		04844E421C06D5C300DC7A51 /* JCCoreTextViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCCoreTextViewController.h; sourceTree = "<group>"; };
@@ -115,6 +113,8 @@
 		04C81E4F1C0D9893005EAB15 /* JCButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCButtonViewController.m; sourceTree = "<group>"; };
 		04C81E511C0EABDB005EAB15 /* HamburgerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HamburgerView.h; sourceTree = "<group>"; };
 		04C81E521C0EABDB005EAB15 /* HamburgerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HamburgerView.m; sourceTree = "<group>"; };
+		04F926251C10131E001CAEB4 /* CTDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
+		04F926261C10131E001CAEB4 /* CTDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +146,7 @@
 		04844E191C05548E00DC7A51 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				04F926241C10131E001CAEB4 /* CoreText */,
 				04844E1A1C05548E00DC7A51 /* WeChatView.h */,
 				04844E1B1C05548E00DC7A51 /* WeChatView.m */,
 				04844E1D1C0554A500DC7A51 /* FingerBallView.h */,
@@ -198,15 +199,6 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		04844E3B1C06B8DB00DC7A51 /* CoreText */ = {
-			isa = PBXGroup;
-			children = (
-				04844E3C1C06B8DB00DC7A51 /* CTDisplayView.h */,
-				04844E3D1C06B8DB00DC7A51 /* CTDisplayView.m */,
-			);
-			path = CoreText;
-			sourceTree = "<group>";
-		};
 		049BCC7A1BFEF3EA004E93AC = {
 			isa = PBXGroup;
 			children = (
@@ -233,7 +225,6 @@
 			children = (
 				04844E201C055C9C00DC7A51 /* Controllers */,
 				04844E191C05548E00DC7A51 /* View */,
-				04844E3B1C06B8DB00DC7A51 /* CoreText */,
 				049BCC891BFEF3EE004E93AC /* JCAppDelegate.h */,
 				049BCC8A1BFEF3EE004E93AC /* JCAppDelegate.m */,
 				049BCC921BFEF3EE004E93AC /* Main.storyboard */,
@@ -269,6 +260,15 @@
 				049BCCB01BFEF3EF004E93AC /* Info.plist */,
 			);
 			path = JCDemoUITests;
+			sourceTree = "<group>";
+		};
+		04F926241C10131E001CAEB4 /* CoreText */ = {
+			isa = PBXGroup;
+			children = (
+				04F926251C10131E001CAEB4 /* CTDisplayView.h */,
+				04F926261C10131E001CAEB4 /* CTDisplayView.m */,
+			);
+			path = CoreText;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -420,10 +420,10 @@
 				04844E321C0566F500DC7A51 /* JCRatingBarViewController.m in Sources */,
 				04844E1F1C0554A500DC7A51 /* FingerBallView.m in Sources */,
 				04844E4A1C06EF7800DC7A51 /* JCDragViewController.m in Sources */,
-				04844E3E1C06B8DB00DC7A51 /* CTDisplayView.m in Sources */,
 				04844E2F1C0566E400DC7A51 /* RatingBar.m in Sources */,
 				045967861C0EECE200FE2DD2 /* JCPlayControlView.m in Sources */,
 				04844E501C07024E00DC7A51 /* JCCircleSiderViewController.m in Sources */,
+				04F926271C10131E001CAEB4 /* CTDisplayView.m in Sources */,
 				04844E411C06BFDD00DC7A51 /* JCScrollViewController.m in Sources */,
 				049BCC881BFEF3EC004E93AC /* main.m in Sources */,
 				04844E531C07027400DC7A51 /* CircleSiderView.m in Sources */,
