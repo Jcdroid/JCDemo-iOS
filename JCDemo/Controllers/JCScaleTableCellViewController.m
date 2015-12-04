@@ -103,6 +103,7 @@ static NSString * const kReuseIdentifier = @"reuseIdentifier";
     }
 }
 
+// color to image
 - (UIImage *)imageWithColor:(UIColor *)color {
     CGSize size = (CGSize){1, 1};
     UIGraphicsBeginImageContext(size);

@@ -38,6 +38,9 @@
 		04C81E531C0EABDB005EAB15 /* HamburgerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C81E521C0EABDB005EAB15 /* HamburgerView.m */; settings = {ASSET_TAGS = (); }; };
 		04F926271C10131E001CAEB4 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F926261C10131E001CAEB4 /* CTDisplayView.m */; settings = {ASSET_TAGS = (); }; };
 		04F9263C1C114E52001CAEB4 /* JCScaleTableCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F9263B1C114E52001CAEB4 /* JCScaleTableCellViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04F926411C1175C1001CAEB4 /* JCImageSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F926401C1175C1001CAEB4 /* JCImageSliderViewController.m */; settings = {ASSET_TAGS = (); }; };
+		04F926481C1176B0001CAEB4 /* JCImageSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F926471C1176B0001CAEB4 /* JCImageSliderView.m */; settings = {ASSET_TAGS = (); }; };
+		04F9264E1C118522001CAEB4 /* JCImageSliderView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04F9264D1C118522001CAEB4 /* JCImageSliderView.bundle */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -118,6 +121,12 @@
 		04F926261C10131E001CAEB4 /* CTDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
 		04F9263A1C114E52001CAEB4 /* JCScaleTableCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCScaleTableCellViewController.h; sourceTree = "<group>"; };
 		04F9263B1C114E52001CAEB4 /* JCScaleTableCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCScaleTableCellViewController.m; sourceTree = "<group>"; };
+		04F9263F1C1175C1001CAEB4 /* JCImageSliderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageSliderViewController.h; sourceTree = "<group>"; };
+		04F926401C1175C1001CAEB4 /* JCImageSliderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageSliderViewController.m; sourceTree = "<group>"; };
+		04F926461C1176B0001CAEB4 /* JCImageSliderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCImageSliderView.h; sourceTree = "<group>"; };
+		04F926471C1176B0001CAEB4 /* JCImageSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageSliderView.m; sourceTree = "<group>"; };
+		04F9264B1C118369001CAEB4 /* JCDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCDemo-Prefix.pch"; sourceTree = "<group>"; };
+		04F9264D1C118522001CAEB4 /* JCImageSliderView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JCImageSliderView.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				04F926241C10131E001CAEB4 /* CoreText */,
+				04F926451C1176B0001CAEB4 /* ImageSlider */,
 				04844E1A1C05548E00DC7A51 /* WeChatView.h */,
 				04844E1B1C05548E00DC7A51 /* WeChatView.m */,
 				04844E1D1C0554A500DC7A51 /* FingerBallView.h */,
@@ -174,32 +184,16 @@
 		04844E201C055C9C00DC7A51 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				04F9263E1C1173DD001CAEB4 /* Algorithm */,
+				04F9263D1C117391001CAEB4 /* CustomView */,
 				04844E271C055E0E00DC7A51 /* JCHomeViewController.h */,
 				04844E281C055E0E00DC7A51 /* JCHomeViewController.m */,
 				04844E211C055C9C00DC7A51 /* JCFirstViewController.h */,
 				04844E221C055C9C00DC7A51 /* JCFirstViewController.m */,
 				04844E231C055C9C00DC7A51 /* JCSecondViewController.h */,
 				04844E241C055C9C00DC7A51 /* JCSecondViewController.m */,
-				04844E2A1C05606400DC7A51 /* JCFingerballViewController.h */,
-				04844E2B1C05606400DC7A51 /* JCFingerballViewController.m */,
-				04844E301C0566F500DC7A51 /* JCRatingBarViewController.h */,
-				04844E311C0566F500DC7A51 /* JCRatingBarViewController.m */,
 				04844E3F1C06BFDD00DC7A51 /* JCScrollViewController.h */,
 				04844E401C06BFDD00DC7A51 /* JCScrollViewController.m */,
-				04844E421C06D5C300DC7A51 /* JCCoreTextViewController.h */,
-				04844E431C06D5C300DC7A51 /* JCCoreTextViewController.m */,
-				04844E481C06EF7800DC7A51 /* JCDragViewController.h */,
-				04844E491C06EF7800DC7A51 /* JCDragViewController.m */,
-				04844E4E1C07024E00DC7A51 /* JCCircleSiderViewController.h */,
-				04844E4F1C07024E00DC7A51 /* JCCircleSiderViewController.m */,
-				04C81E4E1C0D9893005EAB15 /* JCButtonViewController.h */,
-				04C81E4F1C0D9893005EAB15 /* JCButtonViewController.m */,
-				045967781C0EC93C00FE2DD2 /* JCHamburgerViewController.h */,
-				045967791C0EC93C00FE2DD2 /* JCHamburgerViewController.m */,
-				045967811C0EEAF000FE2DD2 /* JCMapDrawLineViewController.h */,
-				045967821C0EEAF000FE2DD2 /* JCMapDrawLineViewController.m */,
-				04F9263A1C114E52001CAEB4 /* JCScaleTableCellViewController.h */,
-				04F9263B1C114E52001CAEB4 /* JCScaleTableCellViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -244,6 +238,7 @@
 		049BCC861BFEF3EC004E93AC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				04F9264B1C118369001CAEB4 /* JCDemo-Prefix.pch */,
 				049BCC871BFEF3EC004E93AC /* main.m */,
 			);
 			name = "Supporting Files";
@@ -274,6 +269,50 @@
 				04F926261C10131E001CAEB4 /* CTDisplayView.m */,
 			);
 			path = CoreText;
+			sourceTree = "<group>";
+		};
+		04F9263D1C117391001CAEB4 /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				04844E2A1C05606400DC7A51 /* JCFingerballViewController.h */,
+				04844E2B1C05606400DC7A51 /* JCFingerballViewController.m */,
+				04844E301C0566F500DC7A51 /* JCRatingBarViewController.h */,
+				04844E311C0566F500DC7A51 /* JCRatingBarViewController.m */,
+				04844E421C06D5C300DC7A51 /* JCCoreTextViewController.h */,
+				04844E431C06D5C300DC7A51 /* JCCoreTextViewController.m */,
+				04844E481C06EF7800DC7A51 /* JCDragViewController.h */,
+				04844E491C06EF7800DC7A51 /* JCDragViewController.m */,
+				04844E4E1C07024E00DC7A51 /* JCCircleSiderViewController.h */,
+				04844E4F1C07024E00DC7A51 /* JCCircleSiderViewController.m */,
+				04C81E4E1C0D9893005EAB15 /* JCButtonViewController.h */,
+				04C81E4F1C0D9893005EAB15 /* JCButtonViewController.m */,
+				045967781C0EC93C00FE2DD2 /* JCHamburgerViewController.h */,
+				045967791C0EC93C00FE2DD2 /* JCHamburgerViewController.m */,
+				045967811C0EEAF000FE2DD2 /* JCMapDrawLineViewController.h */,
+				045967821C0EEAF000FE2DD2 /* JCMapDrawLineViewController.m */,
+				04F9263F1C1175C1001CAEB4 /* JCImageSliderViewController.h */,
+				04F926401C1175C1001CAEB4 /* JCImageSliderViewController.m */,
+			);
+			name = CustomView;
+			sourceTree = "<group>";
+		};
+		04F9263E1C1173DD001CAEB4 /* Algorithm */ = {
+			isa = PBXGroup;
+			children = (
+				04F9263A1C114E52001CAEB4 /* JCScaleTableCellViewController.h */,
+				04F9263B1C114E52001CAEB4 /* JCScaleTableCellViewController.m */,
+			);
+			name = Algorithm;
+			sourceTree = "<group>";
+		};
+		04F926451C1176B0001CAEB4 /* ImageSlider */ = {
+			isa = PBXGroup;
+			children = (
+				04F926461C1176B0001CAEB4 /* JCImageSliderView.h */,
+				04F926471C1176B0001CAEB4 /* JCImageSliderView.m */,
+				04F9264D1C118522001CAEB4 /* JCImageSliderView.bundle */,
+			);
+			path = ImageSlider;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +421,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				045967801C0ED0AA00FE2DD2 /* LaunchScreen.storyboard in Resources */,
+				04F9264E1C118522001CAEB4 /* JCImageSliderView.bundle in Resources */,
 				0459678A1C0EED2B00FE2DD2 /* JCPlayControlView.xib in Resources */,
 				049BCC961BFEF3EE004E93AC /* Assets.xcassets in Resources */,
 				049BCC941BFEF3EE004E93AC /* Main.storyboard in Resources */,
@@ -419,6 +459,7 @@
 				04C81E531C0EABDB005EAB15 /* HamburgerView.m in Sources */,
 				04844E471C06EEC500DC7A51 /* DragableView.m in Sources */,
 				0459677A1C0EC93C00FE2DD2 /* JCHamburgerViewController.m in Sources */,
+				04F926481C1176B0001CAEB4 /* JCImageSliderView.m in Sources */,
 				04844E1C1C05548E00DC7A51 /* WeChatView.m in Sources */,
 				049BCC8B1BFEF3EE004E93AC /* JCAppDelegate.m in Sources */,
 				04844E251C055C9C00DC7A51 /* JCFirstViewController.m in Sources */,
@@ -431,6 +472,7 @@
 				04844E501C07024E00DC7A51 /* JCCircleSiderViewController.m in Sources */,
 				04F926271C10131E001CAEB4 /* CTDisplayView.m in Sources */,
 				04844E411C06BFDD00DC7A51 /* JCScrollViewController.m in Sources */,
+				04F926411C1175C1001CAEB4 /* JCImageSliderViewController.m in Sources */,
 				049BCC881BFEF3EC004E93AC /* main.m in Sources */,
 				04844E531C07027400DC7A51 /* CircleSiderView.m in Sources */,
 			);
@@ -568,6 +610,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "JCDemo/JCDemo-Prefix.pch";
 				INFOPLIST_FILE = JCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -584,6 +627,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREFIX_HEADER = "JCDemo/JCDemo-Prefix.pch";
 				INFOPLIST_FILE = JCDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

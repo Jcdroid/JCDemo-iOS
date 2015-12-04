@@ -16,6 +16,7 @@
 #import "JCHamburgerViewController.h"
 #import "JCMapDrawLineViewController.h"
 #import "JCScaleTableCellViewController.h"
+#import "JCImageSliderViewController.h"
 
 static NSString * const kIdentifierHomeCell = @"HomeCell";
 
@@ -45,6 +46,7 @@ static NSString * const kIdentifierHomeCell = @"HomeCell";
     [self addName:@"HamburgerView" className:@"JCHamburgerViewController" isNibs:NO];
     [self addName:@"MapDrawLine" className:@"JCMapDrawLineViewController" isNibs:YES];
     [self addName:@"TableViewCell滑动缩放算法" className:@"JCScaleTableCellViewController" isNibs:NO];
+    [self addName:@"图片轮播器" className:@"JCImageSliderViewController" isNibs:NO];
 }
 
 - (void)addName:(NSString *)name className:(NSString *)className isNibs:(BOOL)isNib {
