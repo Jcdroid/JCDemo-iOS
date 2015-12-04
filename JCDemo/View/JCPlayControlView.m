@@ -25,6 +25,8 @@
 
 @implementation JCPlayControlView
 
+#pragma mark - Init M
+
 - (instancetype)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
@@ -116,7 +118,7 @@
     }
 }
 
-#pragma mark - Common M & Control Action
+#pragma mark - Common & Control Action M
 
 // reset sider
 - (void)resetSlider {

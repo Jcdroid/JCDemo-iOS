@@ -30,6 +30,7 @@
 @property (nonatomic, weak, nullable) IBOutlet id <JCPlayControlViewDelegate> delegate;
 
 - (void)pauseTimer;
+- (void)continueTimer;
 - (void)endTimer;
 
 @end
