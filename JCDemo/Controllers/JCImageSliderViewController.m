@@ -13,6 +13,8 @@
 
 @property (strong, nonatomic) JCImageSliderView *imageSliderView;
 
+@property (strong, nonatomic) NSArray *imageSliderItems;
+
 @end
 
 @implementation JCImageSliderViewController
@@ -25,6 +27,8 @@
     
     self.automaticallyAdjustsScrollViewInsets = NO;
     
+    
+    // local images
     NSArray *images = @[[UIImage imageNamed:@"JCImageSliderView.bundle/pic01.png"],
                         [UIImage imageNamed:@"JCImageSliderView.bundle/pic02.png"],
                         [UIImage imageNamed:@"JCImageSliderView.bundle/pic03.png"],
@@ -32,8 +36,16 @@
                         [UIImage imageNamed:@"JCImageSliderView.bundle/pic05.gif"],
                         ];
     
+    // net images
+    _imageSliderItems = @[[JCImageSliderItem initWithTitle:@"图片1" withUrl:@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=92546421,3275861884&fm=116&gp=0.jpg"],
+                          [JCImageSliderItem initWithTitle:@"图片2" withUrl:@"https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3808166566,2350527241&fm=116&gp=0.jpg"],
+                          [JCImageSliderItem initWithTitle:@"图片3" withUrl:@"https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=1122689527,866239497&fm=116&gp=0.jpg"],
+                          [JCImageSliderItem initWithTitle:@"图片4" withUrl:@"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=301723372,3034119661&fm=116&gp=0.jpg"],
+                          [JCImageSliderItem initWithTitle:@"图片5" withUrl:@"https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1145600071,3894742496&fm=116&gp=0.jpg"],
+                                  ];
+    
     _imageSliderView = ({
-        JCImageSliderView *imageSliderView = [[JCImageSliderView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenWidth * 3 / 4) withImages:images];
+        JCImageSliderView *imageSliderView = [[JCImageSliderView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth*4/5, kScreenWidth * 3 / 4) imageSliderItems:_imageSliderItems pageControlPosition:JCPageControlPositionRight];
         /* 需要注意这种写法将在new的时候不会设置frame。
         JCImageSliderView *imageSliderView = [JCImageSliderView new];
         imageSliderView.frame = CGRectMake(0, 0, kScreenWidth, kScreenWidth * 3 / 4);
@@ -62,7 +74,8 @@
 #pragma mark - JCImageSliderViewDelegate
 
 - (void)imageSliderView:(JCImageSliderView *)imageSliderView didSelectAtIndex:(NSInteger)index {
-    NSLog(@"点击了第%ld张图片", (long)index);
+    JCImageSliderItem *item = _imageSliderItems[index];
+    NSLog(@"%@", item.title);
 }
 
 @end
