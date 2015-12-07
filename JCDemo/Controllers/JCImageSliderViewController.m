@@ -9,7 +9,7 @@
 #import "JCImageSliderViewController.h"
 #import "JCImageSliderView.h"
 
-@interface JCImageSliderViewController ()
+@interface JCImageSliderViewController () <JCImageSliderViewDelegate>
 
 @property (strong, nonatomic) JCImageSliderView *imageSliderView;
 
@@ -23,12 +23,22 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    NSArray *images = @[[UIImage imageNamed:@"JCImageSliderView.bundle/pic01.png"],
+                        [UIImage imageNamed:@"JCImageSliderView.bundle/pic02.png"],
+                        [UIImage imageNamed:@"JCImageSliderView.bundle/pic03.png"],
+                        [UIImage imageNamed:@"JCImageSliderView.bundle/pic04.png"],
+                        [UIImage imageNamed:@"JCImageSliderView.bundle/pic05.gif"],
+                        ];
+    
     _imageSliderView = ({
-        JCImageSliderView *imageSliderView = [[JCImageSliderView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenWidth * 3 / 4)];
+        JCImageSliderView *imageSliderView = [[JCImageSliderView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenWidth * 3 / 4) withImages:images];
         /* 需要注意这种写法将在new的时候不会设置frame。
         JCImageSliderView *imageSliderView = [JCImageSliderView new];
         imageSliderView.frame = CGRectMake(0, 0, kScreenWidth, kScreenWidth * 3 / 4);
          */
+        imageSliderView.delegate = self;
         [self.view addSubview:imageSliderView];
         imageSliderView;
     });
@@ -48,5 +58,11 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - JCImageSliderViewDelegate
+
+- (void)imageSliderView:(JCImageSliderView *)imageSliderView didSelectAtIndex:(NSInteger)index {
+    NSLog(@"点击了第%ld张图片", (long)index);
+}
 
 @end

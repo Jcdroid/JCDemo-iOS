@@ -8,8 +8,20 @@
 
 #import <UIKit/UIKit.h>
 
+@class JCImageSliderView;
+
+@protocol JCImageSliderViewDelegate <NSObject>
+
+- (void)imageSliderView:(nullable JCImageSliderView *)imageSliderView didSelectAtIndex:(NSInteger)index;
+
+@end
+
 @interface JCImageSliderView : UIView
 
-@property (strong, nonatomic) NSArray *images;
+- (instancetype)initWithFrame:(CGRect)frame withImages:(NSArray *)images;
+
+@property (strong, nonatomic, nonnull) NSArray *images;
+
+@property (nonatomic, weak, nullable) id <JCImageSliderViewDelegate> delegate;
 
 @end

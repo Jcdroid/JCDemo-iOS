@@ -14,7 +14,7 @@
 #define kPageControlHeight 24.0f
 
 @interface JCImageSliderView () <UIScrollViewDelegate> {
-    NSMutableArray *_imageViewsContiner;
+    NSMutableArray *_imageViewsContainer;
     
     CGFloat _allImageWidth, _singleImageWidth;
 }
@@ -36,9 +36,10 @@
     return self;
 }
 
-- (instancetype)initWithFrame:(CGRect)frame {
+- (instancetype)initWithFrame:(CGRect)frame withImages:(NSArray *)images {
     self = [super initWithFrame:frame];
     if (self) {
+        self.images = images;
         [self commonInit];
     }
     return self;
@@ -46,14 +47,12 @@
 
 - (void)commonInit {
     
-    self.backgroundColor = (YES)?[UIColor whiteColor]:[UIColor colorWithRed:0.0 green:0.8 blue:1.0 alpha:1.0];// test
+    if (!_images || _images.count == 0) {
+        NSLog(@"图片数组不能为空或数量不能为0");
+        return;
+    }
     
-    _images = @[[UIImage imageNamed:@"JCImageSliderView.bundle/pic01.png"],
-                [UIImage imageNamed:@"JCImageSliderView.bundle/pic02.png"],
-                [UIImage imageNamed:@"JCImageSliderView.bundle/pic03.png"],
-                [UIImage imageNamed:@"JCImageSliderView.bundle/pic04.png"],
-                [UIImage imageNamed:@"JCImageSliderView.bundle/pic05.gif"],
-                ];
+    self.backgroundColor = (YES)?[UIColor whiteColor]:[UIColor colorWithRed:0.0 green:0.8 blue:1.0 alpha:1.0];// test
     
     _scrollView =  ({
         UIScrollView *scrollView = [UIScrollView new];
@@ -82,17 +81,18 @@
         pageControl;
     });
     
-    _imageViewsContiner = @[].mutableCopy;
+    _imageViewsContainer = @[].mutableCopy;
     for (int i = 0; i < 3; i++) {
         NSMutableArray *imageViews = @[].mutableCopy;
         for (int j = 0; j < _images.count; j++) {
             UIImageView *imageView = [[UIImageView alloc] initWithFrame:CGRectMake(kScreenWidth * _images.count * i + kScreenWidth * j, 0, kScreenWidth, self.frame.size.height)];
             UIImage *image = _images[j];
             imageView.image = image;
+            imageView.contentMode = UIViewContentModeScaleToFill;
             [imageViews addObject:imageView];
             [self.scrollView addSubview:imageView];
         }
-        [_imageViewsContiner addObject:imageViews];
+        [_imageViewsContainer addObject:imageViews];
     }
     
     _singleImageWidth = self.scrollView.frame.size.width;
@@ -100,38 +100,44 @@
     [_scrollView setContentOffset:CGPointMake(_allImageWidth, 0)];
     
     _timer = [NSTimer scheduledTimerWithTimeInterval:4.0 target:self selector:@selector(scrollToNext:) userInfo:nil repeats:YES];
+    
+    [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(selectIndex:)]];
 }
 
 #pragma mark - UIScrollViewDelegate M
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    if (scrollView.contentOffset.x >= _allImageWidth * 2) {
-        _pageControl.currentPage = 0;
-    } else if (scrollView.contentOffset.x < _allImageWidth) {
-        _pageControl.currentPage = _images.count - 1;
-    } else {
-        _pageControl.currentPage = (scrollView.contentOffset.x - _allImageWidth) / _singleImageWidth;
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    if (scrollView.contentOffset.x >= _allImageWidth * 2) {// 到达第三组ImageViews
+        [_scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x - _allImageWidth, 0)];
+    } else if (scrollView.contentOffset.x < _allImageWidth) {// 到达第一组ImageViews
+        [_scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x + _allImageWidth, 0)];
     }
+    _pageControl.currentPage = (scrollView.contentOffset.x - _allImageWidth) / _singleImageWidth;
 }
 
 - (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
-    if (scrollView.contentOffset.x >= _allImageWidth * 2) {
-        [_scrollView setContentOffset:CGPointMake(_allImageWidth, 0)];
-        _pageControl.currentPage = 0;
-    } else if (scrollView.contentOffset.x < _allImageWidth) {
-        [_scrollView setContentOffset:CGPointMake(_allImageWidth * 2, 0)];
-        _pageControl.currentPage = _images.count - 1;
-    } else {
-        _pageControl.currentPage = (scrollView.contentOffset.x - _allImageWidth) / _singleImageWidth;
+    if (scrollView.contentOffset.x >= _allImageWidth * 2) {// 到达第三组ImageViews
+        [_scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x - _allImageWidth, 0)];
+    } else if (scrollView.contentOffset.x < _allImageWidth) {// 到达第一组ImageViews
+        [_scrollView setContentOffset:CGPointMake(scrollView.contentOffset.x + _allImageWidth, 0)];
     }
+    _pageControl.currentPage = (scrollView.contentOffset.x - _allImageWidth) / _singleImageWidth;
 }
 
 - (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-//    [self pauseTimer];
+    [self pauseTimer];
 }
 
 - (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate {
-//    [self continueTimer];
+    [self continueTimer];
+}
+
+#pragma mark - Action M
+
+- (void)selectIndex:(id)sender {
+    if (self.delegate) {
+        [self.delegate imageSliderView:self didSelectAtIndex:_pageControl.currentPage];
+    }
 }
 
 #pragma mark - Private M
@@ -141,14 +147,15 @@
 }
 
 - (void)pauseTimer {
-    if (_timer && [_timer isValid]) {
-        [_timer setFireDate:[NSDate distantFuture]];
+    if (_timer) {
+        [_timer invalidate];
+        _timer = nil;
     }
 }
 
 - (void)continueTimer {
-    if (_timer && [_timer isValid]) {
-        [_timer setFireDate:[NSDate distantPast]];
+    if (!_timer) {
+        _timer = [NSTimer scheduledTimerWithTimeInterval:4.0 target:self selector:@selector(scrollToNext:) userInfo:nil repeats:YES];
     }
 }
 
