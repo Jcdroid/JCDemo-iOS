@@ -45,7 +45,7 @@
                                   ];
     
     _imageSliderView = ({
-        JCImageSliderView *imageSliderView = [[JCImageSliderView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth*4/5, kScreenWidth * 3 / 4) imageSliderItems:_imageSliderItems pageControlPosition:JCPageControlPositionRight];
+        JCImageSliderView *imageSliderView = [[JCImageSliderView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenWidth * 3 / 4) imageSliderItems:_imageSliderItems pageControlPosition:JCPageControlPositionRight];
         /* 需要注意这种写法将在new的时候不会设置frame。
         JCImageSliderView *imageSliderView = [JCImageSliderView new];
         imageSliderView.frame = CGRectMake(0, 0, kScreenWidth, kScreenWidth * 3 / 4);
@@ -54,6 +54,20 @@
         [self.view addSubview:imageSliderView];
         imageSliderView;
     });
+}
+
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [_imageSliderView continueTimer];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [_imageSliderView pauseTimer];
+}
+
+- (void)dealloc {
+    [_imageSliderView endTimer];
 }
 
 - (void)didReceiveMemoryWarning {

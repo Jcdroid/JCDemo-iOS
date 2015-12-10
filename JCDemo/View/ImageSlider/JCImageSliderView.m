@@ -186,6 +186,8 @@
 
 - (void)scrollToNext:(NSTimer *)timer {
     [_scrollView setContentOffset:CGPointMake(_scrollView.contentOffset.x + _singleImageWidth, 0) animated:YES];
+    
+    NSLog(@"---");
 }
 
 - (void)createTimer {
@@ -195,10 +197,7 @@
 }
 
 - (void)pauseTimer {
-    if (_timer) {
-        [_timer invalidate];
-        _timer = nil;
-    }
+    [self endTimer];
 }
 
 - (void)continueTimer {
