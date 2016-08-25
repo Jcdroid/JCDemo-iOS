@@ -7,42 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		041A31361C1680030019229A /* JCSwitchTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A31351C1680030019229A /* JCSwitchTextView.m */; settings = {ASSET_TAGS = (); }; };
-		041A31391C1685E90019229A /* JCSwitchTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A31381C1685E90019229A /* JCSwitchTextViewController.m */; settings = {ASSET_TAGS = (); }; };
-		0459677A1C0EC93C00FE2DD2 /* JCHamburgerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045967791C0EC93C00FE2DD2 /* JCHamburgerViewController.m */; settings = {ASSET_TAGS = (); }; };
-		045967801C0ED0AA00FE2DD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459677F1C0ED0AA00FE2DD2 /* LaunchScreen.storyboard */; settings = {ASSET_TAGS = (); }; };
-		045967831C0EEAF000FE2DD2 /* JCMapDrawLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045967821C0EEAF000FE2DD2 /* JCMapDrawLineViewController.m */; settings = {ASSET_TAGS = (); }; };
-		045967861C0EECE200FE2DD2 /* JCPlayControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045967851C0EECE200FE2DD2 /* JCPlayControlView.m */; settings = {ASSET_TAGS = (); }; };
-		0459678A1C0EED2B00FE2DD2 /* JCPlayControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045967891C0EED2B00FE2DD2 /* JCPlayControlView.xib */; settings = {ASSET_TAGS = (); }; };
+		041A31361C1680030019229A /* JCSwitchTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A31351C1680030019229A /* JCSwitchTextView.m */; };
+		041A31391C1685E90019229A /* JCSwitchTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 041A31381C1685E90019229A /* JCSwitchTextViewController.m */; };
+		0459677A1C0EC93C00FE2DD2 /* JCHamburgerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045967791C0EC93C00FE2DD2 /* JCHamburgerViewController.m */; };
+		045967801C0ED0AA00FE2DD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0459677F1C0ED0AA00FE2DD2 /* LaunchScreen.storyboard */; };
+		045967831C0EEAF000FE2DD2 /* JCMapDrawLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 045967821C0EEAF000FE2DD2 /* JCMapDrawLineViewController.m */; };
+		045967861C0EECE200FE2DD2 /* JCPlayControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = 045967851C0EECE200FE2DD2 /* JCPlayControlView.m */; };
+		0459678A1C0EED2B00FE2DD2 /* JCPlayControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 045967891C0EED2B00FE2DD2 /* JCPlayControlView.xib */; };
 		0459678C1C0EEF4B00FE2DD2 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0459678B1C0EEF4B00FE2DD2 /* MapKit.framework */; };
-		04844E1C1C05548E00DC7A51 /* WeChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E1B1C05548E00DC7A51 /* WeChatView.m */; settings = {ASSET_TAGS = (); }; };
-		04844E1F1C0554A500DC7A51 /* FingerBallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E1E1C0554A500DC7A51 /* FingerBallView.m */; settings = {ASSET_TAGS = (); }; };
-		04844E251C055C9C00DC7A51 /* JCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E221C055C9C00DC7A51 /* JCFirstViewController.m */; settings = {ASSET_TAGS = (); }; };
-		04844E261C055C9C00DC7A51 /* JCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E241C055C9C00DC7A51 /* JCSecondViewController.m */; settings = {ASSET_TAGS = (); }; };
-		04844E291C055E0E00DC7A51 /* JCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E281C055E0E00DC7A51 /* JCHomeViewController.m */; settings = {ASSET_TAGS = (); }; };
-		04844E2C1C05606400DC7A51 /* JCFingerballViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E2B1C05606400DC7A51 /* JCFingerballViewController.m */; settings = {ASSET_TAGS = (); }; };
-		04844E2F1C0566E400DC7A51 /* RatingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E2E1C0566E400DC7A51 /* RatingBar.m */; settings = {ASSET_TAGS = (); }; };
-		04844E321C0566F500DC7A51 /* JCRatingBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E311C0566F500DC7A51 /* JCRatingBarViewController.m */; settings = {ASSET_TAGS = (); }; };
-		04844E411C06BFDD00DC7A51 /* JCScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E401C06BFDD00DC7A51 /* JCScrollViewController.m */; settings = {ASSET_TAGS = (); }; };
-		04844E441C06D5C300DC7A51 /* JCCoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E431C06D5C300DC7A51 /* JCCoreTextViewController.m */; settings = {ASSET_TAGS = (); }; };
-		04844E471C06EEC500DC7A51 /* DragableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E461C06EEC500DC7A51 /* DragableView.m */; settings = {ASSET_TAGS = (); }; };
-		04844E4A1C06EF7800DC7A51 /* JCDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E491C06EF7800DC7A51 /* JCDragViewController.m */; settings = {ASSET_TAGS = (); }; };
-		04844E501C07024E00DC7A51 /* JCCircleSiderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E4F1C07024E00DC7A51 /* JCCircleSiderViewController.m */; settings = {ASSET_TAGS = (); }; };
-		04844E531C07027400DC7A51 /* CircleSiderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E521C07027400DC7A51 /* CircleSiderView.m */; settings = {ASSET_TAGS = (); }; };
+		04844E1C1C05548E00DC7A51 /* WeChatView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E1B1C05548E00DC7A51 /* WeChatView.m */; };
+		04844E1F1C0554A500DC7A51 /* FingerBallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E1E1C0554A500DC7A51 /* FingerBallView.m */; };
+		04844E251C055C9C00DC7A51 /* JCFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E221C055C9C00DC7A51 /* JCFirstViewController.m */; };
+		04844E261C055C9C00DC7A51 /* JCSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E241C055C9C00DC7A51 /* JCSecondViewController.m */; };
+		04844E291C055E0E00DC7A51 /* JCHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E281C055E0E00DC7A51 /* JCHomeViewController.m */; };
+		04844E2C1C05606400DC7A51 /* JCFingerballViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E2B1C05606400DC7A51 /* JCFingerballViewController.m */; };
+		04844E2F1C0566E400DC7A51 /* RatingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E2E1C0566E400DC7A51 /* RatingBar.m */; };
+		04844E321C0566F500DC7A51 /* JCRatingBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E311C0566F500DC7A51 /* JCRatingBarViewController.m */; };
+		04844E411C06BFDD00DC7A51 /* JCScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E401C06BFDD00DC7A51 /* JCScrollViewController.m */; };
+		04844E441C06D5C300DC7A51 /* JCCoreTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E431C06D5C300DC7A51 /* JCCoreTextViewController.m */; };
+		04844E471C06EEC500DC7A51 /* DragableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E461C06EEC500DC7A51 /* DragableView.m */; };
+		04844E4A1C06EF7800DC7A51 /* JCDragViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E491C06EF7800DC7A51 /* JCDragViewController.m */; };
+		04844E501C07024E00DC7A51 /* JCCircleSiderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E4F1C07024E00DC7A51 /* JCCircleSiderViewController.m */; };
+		04844E531C07027400DC7A51 /* CircleSiderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04844E521C07027400DC7A51 /* CircleSiderView.m */; };
 		049BCC881BFEF3EC004E93AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 049BCC871BFEF3EC004E93AC /* main.m */; };
 		049BCC8B1BFEF3EE004E93AC /* JCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 049BCC8A1BFEF3EE004E93AC /* JCAppDelegate.m */; };
 		049BCC941BFEF3EE004E93AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 049BCC921BFEF3EE004E93AC /* Main.storyboard */; };
 		049BCC961BFEF3EE004E93AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 049BCC951BFEF3EE004E93AC /* Assets.xcassets */; };
 		049BCCA41BFEF3EE004E93AC /* JCDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049BCCA31BFEF3EE004E93AC /* JCDemoTests.m */; };
 		049BCCAF1BFEF3EF004E93AC /* JCDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 049BCCAE1BFEF3EF004E93AC /* JCDemoUITests.m */; };
-		04C81E4D1C0D9800005EAB15 /* JCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C81E4C1C0D9800005EAB15 /* JCButton.m */; settings = {ASSET_TAGS = (); }; };
-		04C81E501C0D9893005EAB15 /* JCButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C81E4F1C0D9893005EAB15 /* JCButtonViewController.m */; settings = {ASSET_TAGS = (); }; };
-		04C81E531C0EABDB005EAB15 /* HamburgerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C81E521C0EABDB005EAB15 /* HamburgerView.m */; settings = {ASSET_TAGS = (); }; };
-		04F926271C10131E001CAEB4 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F926261C10131E001CAEB4 /* CTDisplayView.m */; settings = {ASSET_TAGS = (); }; };
-		04F9263C1C114E52001CAEB4 /* JCScaleTableCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F9263B1C114E52001CAEB4 /* JCScaleTableCellViewController.m */; settings = {ASSET_TAGS = (); }; };
-		04F926411C1175C1001CAEB4 /* JCImageSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F926401C1175C1001CAEB4 /* JCImageSliderViewController.m */; settings = {ASSET_TAGS = (); }; };
-		04F926481C1176B0001CAEB4 /* JCImageSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F926471C1176B0001CAEB4 /* JCImageSliderView.m */; settings = {ASSET_TAGS = (); }; };
-		04F9264E1C118522001CAEB4 /* JCImageSliderView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04F9264D1C118522001CAEB4 /* JCImageSliderView.bundle */; settings = {ASSET_TAGS = (); }; };
+		04C81E4D1C0D9800005EAB15 /* JCButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C81E4C1C0D9800005EAB15 /* JCButton.m */; };
+		04C81E501C0D9893005EAB15 /* JCButtonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C81E4F1C0D9893005EAB15 /* JCButtonViewController.m */; };
+		04C81E531C0EABDB005EAB15 /* HamburgerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04C81E521C0EABDB005EAB15 /* HamburgerView.m */; };
+		04F835E41C196A4E00321118 /* JCContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F835E31C196A4E00321118 /* JCContainerViewController.m */; };
+		04F835E71C196DA900321118 /* JCChildOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F835E61C196DA900321118 /* JCChildOneViewController.m */; };
+		04F835EA1C19852900321118 /* JCAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F835E91C19852900321118 /* JCAnimator.m */; };
+		04F926271C10131E001CAEB4 /* CTDisplayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F926261C10131E001CAEB4 /* CTDisplayView.m */; };
+		04F9263C1C114E52001CAEB4 /* JCScaleTableCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F9263B1C114E52001CAEB4 /* JCScaleTableCellViewController.m */; };
+		04F926411C1175C1001CAEB4 /* JCImageSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F926401C1175C1001CAEB4 /* JCImageSliderViewController.m */; };
+		04F926481C1176B0001CAEB4 /* JCImageSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F926471C1176B0001CAEB4 /* JCImageSliderView.m */; };
+		04F9264E1C118522001CAEB4 /* JCImageSliderView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04F9264D1C118522001CAEB4 /* JCImageSliderView.bundle */; };
+		BD06DD53744306F5A2A01B99 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C1264BB78B86E5904DF0E6 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +127,12 @@
 		04C81E4F1C0D9893005EAB15 /* JCButtonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCButtonViewController.m; sourceTree = "<group>"; };
 		04C81E511C0EABDB005EAB15 /* HamburgerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HamburgerView.h; sourceTree = "<group>"; };
 		04C81E521C0EABDB005EAB15 /* HamburgerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HamburgerView.m; sourceTree = "<group>"; };
+		04F835E21C196A4E00321118 /* JCContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCContainerViewController.h; sourceTree = "<group>"; };
+		04F835E31C196A4E00321118 /* JCContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCContainerViewController.m; sourceTree = "<group>"; };
+		04F835E51C196DA900321118 /* JCChildOneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCChildOneViewController.h; sourceTree = "<group>"; };
+		04F835E61C196DA900321118 /* JCChildOneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCChildOneViewController.m; sourceTree = "<group>"; };
+		04F835E81C19852900321118 /* JCAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCAnimator.h; sourceTree = "<group>"; };
+		04F835E91C19852900321118 /* JCAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCAnimator.m; sourceTree = "<group>"; };
 		04F926251C10131E001CAEB4 /* CTDisplayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTDisplayView.h; sourceTree = "<group>"; };
 		04F926261C10131E001CAEB4 /* CTDisplayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTDisplayView.m; sourceTree = "<group>"; };
 		04F9263A1C114E52001CAEB4 /* JCScaleTableCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCScaleTableCellViewController.h; sourceTree = "<group>"; };
@@ -133,6 +143,9 @@
 		04F926471C1176B0001CAEB4 /* JCImageSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageSliderView.m; sourceTree = "<group>"; };
 		04F9264B1C118369001CAEB4 /* JCDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCDemo-Prefix.pch"; sourceTree = "<group>"; };
 		04F9264D1C118522001CAEB4 /* JCImageSliderView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JCImageSliderView.bundle; sourceTree = "<group>"; };
+		2599FC1AB728450AF35EB3BF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B9C1264BB78B86E5904DF0E6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9BA0BA1705301FA47F166EA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0459678C1C0EEF4B00FE2DD2 /* MapKit.framework in Frameworks */,
+				BD06DD53744306F5A2A01B99 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +206,7 @@
 		04844E201C055C9C00DC7A51 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				04F835E11C192F8300321118 /* ControllerTransitioning */,
 				04F9263E1C1173DD001CAEB4 /* Algorithm */,
 				04F9263D1C117391001CAEB4 /* CustomView */,
 				04844E271C055E0E00DC7A51 /* JCHomeViewController.h */,
@@ -214,6 +229,8 @@
 				049BCCA21BFEF3EE004E93AC /* JCDemoTests */,
 				049BCCAD1BFEF3EF004E93AC /* JCDemoUITests */,
 				049BCC841BFEF3EB004E93AC /* Products */,
+				51B5DBEE9D9813969094907E /* Pods */,
+				2656DD18C110013F426863C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -268,6 +285,19 @@
 				049BCCB01BFEF3EF004E93AC /* Info.plist */,
 			);
 			path = JCDemoUITests;
+			sourceTree = "<group>";
+		};
+		04F835E11C192F8300321118 /* ControllerTransitioning */ = {
+			isa = PBXGroup;
+			children = (
+				04F835E21C196A4E00321118 /* JCContainerViewController.h */,
+				04F835E31C196A4E00321118 /* JCContainerViewController.m */,
+				04F835E51C196DA900321118 /* JCChildOneViewController.h */,
+				04F835E61C196DA900321118 /* JCChildOneViewController.m */,
+				04F835E81C19852900321118 /* JCAnimator.h */,
+				04F835E91C19852900321118 /* JCAnimator.m */,
+			);
+			name = ControllerTransitioning;
 			sourceTree = "<group>";
 		};
 		04F926241C10131E001CAEB4 /* CoreText */ = {
@@ -325,6 +355,23 @@
 			path = ImageSlider;
 			sourceTree = "<group>";
 		};
+		2656DD18C110013F426863C8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9C1264BB78B86E5904DF0E6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		51B5DBEE9D9813969094907E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2599FC1AB728450AF35EB3BF /* Pods.debug.xcconfig */,
+				D9BA0BA1705301FA47F166EA /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -332,9 +379,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 049BCCB31BFEF3EF004E93AC /* Build configuration list for PBXNativeTarget "JCDemo" */;
 			buildPhases = (
+				1CFCB58FD7B7DA843F230BBE /* Check Pods Manifest.lock */,
 				049BCC7F1BFEF3EB004E93AC /* Sources */,
 				049BCC801BFEF3EB004E93AC /* Frameworks */,
 				049BCC811BFEF3EB004E93AC /* Resources */,
+				80FFB268F6774E99E677CADD /* Embed Pods Frameworks */,
+				9FC3295D18CA2FBFEED50D38 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -454,6 +504,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1CFCB58FD7B7DA843F230BBE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		80FFB268F6774E99E677CADD /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FC3295D18CA2FBFEED50D38 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		049BCC7F1BFEF3EB004E93AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -465,7 +563,9 @@
 				041A31361C1680030019229A /* JCSwitchTextView.m in Sources */,
 				04844E2C1C05606400DC7A51 /* JCFingerballViewController.m in Sources */,
 				04C81E501C0D9893005EAB15 /* JCButtonViewController.m in Sources */,
+				04F835E41C196A4E00321118 /* JCContainerViewController.m in Sources */,
 				04844E261C055C9C00DC7A51 /* JCSecondViewController.m in Sources */,
+				04F835EA1C19852900321118 /* JCAnimator.m in Sources */,
 				04F9263C1C114E52001CAEB4 /* JCScaleTableCellViewController.m in Sources */,
 				04C81E531C0EABDB005EAB15 /* HamburgerView.m in Sources */,
 				04844E471C06EEC500DC7A51 /* DragableView.m in Sources */,
@@ -477,6 +577,7 @@
 				04844E251C055C9C00DC7A51 /* JCFirstViewController.m in Sources */,
 				045967831C0EEAF000FE2DD2 /* JCMapDrawLineViewController.m in Sources */,
 				04844E321C0566F500DC7A51 /* JCRatingBarViewController.m in Sources */,
+				04F835E71C196DA900321118 /* JCChildOneViewController.m in Sources */,
 				04844E1F1C0554A500DC7A51 /* FingerBallView.m in Sources */,
 				04844E4A1C06EF7800DC7A51 /* JCDragViewController.m in Sources */,
 				04844E2F1C0566E400DC7A51 /* RatingBar.m in Sources */,
@@ -617,6 +718,7 @@
 		};
 		049BCCB41BFEF3EF004E93AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2599FC1AB728450AF35EB3BF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -634,6 +736,7 @@
 		};
 		049BCCB51BFEF3EF004E93AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9BA0BA1705301FA47F166EA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

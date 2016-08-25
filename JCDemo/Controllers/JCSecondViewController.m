@@ -7,6 +7,7 @@
 //
 
 #import "JCSecondViewController.h"
+#import "JCContainerViewController.h"
 
 @interface JCSecondViewController ()
 
@@ -22,6 +23,11 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)toNextVC:(id)sender {
+    JCContainerViewController *vc = [JCContainerViewController new];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
