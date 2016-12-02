@@ -83,6 +83,7 @@ static NSString * const kIdentifierHomeCell = @"HomeCell";
         }
     }
     vc.title = self.names[indexPath.row];
+    vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
 }
 
