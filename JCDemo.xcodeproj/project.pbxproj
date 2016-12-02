@@ -46,7 +46,7 @@
 		04F926411C1175C1001CAEB4 /* JCImageSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F926401C1175C1001CAEB4 /* JCImageSliderViewController.m */; };
 		04F926481C1176B0001CAEB4 /* JCImageSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F926471C1176B0001CAEB4 /* JCImageSliderView.m */; };
 		04F9264E1C118522001CAEB4 /* JCImageSliderView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04F9264D1C118522001CAEB4 /* JCImageSliderView.bundle */; };
-		BD06DD53744306F5A2A01B99 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9C1264BB78B86E5904DF0E6 /* libPods.a */; };
+		4FEC3A981DF1502A00BEEA46 /* JCVerticalPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC3A971DF1502A00BEEA46 /* JCVerticalPageViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,9 +143,9 @@
 		04F926471C1176B0001CAEB4 /* JCImageSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageSliderView.m; sourceTree = "<group>"; };
 		04F9264B1C118369001CAEB4 /* JCDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCDemo-Prefix.pch"; sourceTree = "<group>"; };
 		04F9264D1C118522001CAEB4 /* JCImageSliderView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JCImageSliderView.bundle; sourceTree = "<group>"; };
-		2599FC1AB728450AF35EB3BF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4FEC3A961DF1502A00BEEA46 /* JCVerticalPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCVerticalPageViewController.h; sourceTree = "<group>"; };
+		4FEC3A971DF1502A00BEEA46 /* JCVerticalPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCVerticalPageViewController.m; sourceTree = "<group>"; };
 		B9C1264BB78B86E5904DF0E6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		D9BA0BA1705301FA47F166EA /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,7 +154,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0459678C1C0EEF4B00FE2DD2 /* MapKit.framework in Frameworks */,
-				BD06DD53744306F5A2A01B99 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,7 +228,6 @@
 				049BCCA21BFEF3EE004E93AC /* JCDemoTests */,
 				049BCCAD1BFEF3EF004E93AC /* JCDemoUITests */,
 				049BCC841BFEF3EB004E93AC /* Products */,
-				51B5DBEE9D9813969094907E /* Pods */,
 				2656DD18C110013F426863C8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -332,6 +330,8 @@
 				04F926401C1175C1001CAEB4 /* JCImageSliderViewController.m */,
 				041A31371C1685E90019229A /* JCSwitchTextViewController.h */,
 				041A31381C1685E90019229A /* JCSwitchTextViewController.m */,
+				4FEC3A961DF1502A00BEEA46 /* JCVerticalPageViewController.h */,
+				4FEC3A971DF1502A00BEEA46 /* JCVerticalPageViewController.m */,
 			);
 			name = CustomView;
 			sourceTree = "<group>";
@@ -363,15 +363,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		51B5DBEE9D9813969094907E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				2599FC1AB728450AF35EB3BF /* Pods.debug.xcconfig */,
-				D9BA0BA1705301FA47F166EA /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -379,12 +370,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 049BCCB31BFEF3EF004E93AC /* Build configuration list for PBXNativeTarget "JCDemo" */;
 			buildPhases = (
-				1CFCB58FD7B7DA843F230BBE /* Check Pods Manifest.lock */,
 				049BCC7F1BFEF3EB004E93AC /* Sources */,
 				049BCC801BFEF3EB004E93AC /* Frameworks */,
 				049BCC811BFEF3EB004E93AC /* Resources */,
-				80FFB268F6774E99E677CADD /* Embed Pods Frameworks */,
-				9FC3295D18CA2FBFEED50D38 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -504,54 +492,6 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
-/* Begin PBXShellScriptBuildPhase section */
-		1CFCB58FD7B7DA843F230BBE /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		80FFB268F6774E99E677CADD /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9FC3295D18CA2FBFEED50D38 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
 		049BCC7F1BFEF3EB004E93AC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -585,6 +525,7 @@
 				04844E501C07024E00DC7A51 /* JCCircleSiderViewController.m in Sources */,
 				04F926271C10131E001CAEB4 /* CTDisplayView.m in Sources */,
 				04844E411C06BFDD00DC7A51 /* JCScrollViewController.m in Sources */,
+				4FEC3A981DF1502A00BEEA46 /* JCVerticalPageViewController.m in Sources */,
 				04F926411C1175C1001CAEB4 /* JCImageSliderViewController.m in Sources */,
 				049BCC881BFEF3EC004E93AC /* main.m in Sources */,
 				04844E531C07027400DC7A51 /* CircleSiderView.m in Sources */,
@@ -718,7 +659,6 @@
 		};
 		049BCCB41BFEF3EF004E93AC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2599FC1AB728450AF35EB3BF /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -736,7 +676,6 @@
 		};
 		049BCCB51BFEF3EF004E93AC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D9BA0BA1705301FA47F166EA /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;

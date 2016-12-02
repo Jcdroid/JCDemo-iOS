@@ -7,17 +7,6 @@
 //
 
 #import "JCHomeViewController.h"
-#import "JCFingerballViewController.h"
-#import "JCScrollViewController.h"
-#import "JCCoreTextViewController.h"
-#import "JCDragViewController.h"
-#import "JCCircleSiderViewController.h"
-#import "JCButtonViewController.h"
-#import "JCHamburgerViewController.h"
-#import "JCMapDrawLineViewController.h"
-#import "JCScaleTableCellViewController.h"
-#import "JCImageSliderViewController.h"
-#import "JCSwitchTextViewController.h"
 
 static NSString * const kIdentifierHomeCell = @"HomeCell";
 
@@ -49,6 +38,7 @@ static NSString * const kIdentifierHomeCell = @"HomeCell";
     [self addName:@"TableViewCell滑动缩放算法" className:@"JCScaleTableCellViewController" isNibs:NO];
     [self addName:@"图片轮播器" className:@"JCImageSliderViewController" isNibs:NO];
     [self addName:@"搜索框候选文字切换" className:@"JCSwitchTextViewController" isNibs:NO];
+    [self addName:@"垂直分页" className:@"JCVerticalPageViewController" isNibs:NO];
 }
 
 - (void)addName:(NSString *)name className:(NSString *)className isNibs:(BOOL)isNib {
