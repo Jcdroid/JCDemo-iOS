@@ -23,6 +23,8 @@ static NSString * const kIdentifierHomeCell = @"HomeCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.clearsSelectionOnViewWillAppear = YES;
+    
     self.names = @[].mutableCopy;
     self.classNames = @[].mutableCopy;
     self.isNibs = @[].mutableCopy;
