@@ -46,6 +46,7 @@
 		04F926411C1175C1001CAEB4 /* JCImageSliderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F926401C1175C1001CAEB4 /* JCImageSliderViewController.m */; };
 		04F926481C1176B0001CAEB4 /* JCImageSliderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 04F926471C1176B0001CAEB4 /* JCImageSliderView.m */; };
 		04F9264E1C118522001CAEB4 /* JCImageSliderView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 04F9264D1C118522001CAEB4 /* JCImageSliderView.bundle */; };
+		4F26171E1DF7C24500D2B7CC /* JCMarqueeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F26171D1DF7C24500D2B7CC /* JCMarqueeViewController.m */; };
 		4FEC3A981DF1502A00BEEA46 /* JCVerticalPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FEC3A971DF1502A00BEEA46 /* JCVerticalPageViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -143,6 +144,8 @@
 		04F926471C1176B0001CAEB4 /* JCImageSliderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCImageSliderView.m; sourceTree = "<group>"; };
 		04F9264B1C118369001CAEB4 /* JCDemo-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCDemo-Prefix.pch"; sourceTree = "<group>"; };
 		04F9264D1C118522001CAEB4 /* JCImageSliderView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JCImageSliderView.bundle; sourceTree = "<group>"; };
+		4F26171C1DF7C24500D2B7CC /* JCMarqueeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCMarqueeViewController.h; sourceTree = "<group>"; };
+		4F26171D1DF7C24500D2B7CC /* JCMarqueeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCMarqueeViewController.m; sourceTree = "<group>"; };
 		4FEC3A961DF1502A00BEEA46 /* JCVerticalPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCVerticalPageViewController.h; sourceTree = "<group>"; };
 		4FEC3A971DF1502A00BEEA46 /* JCVerticalPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCVerticalPageViewController.m; sourceTree = "<group>"; };
 		B9C1264BB78B86E5904DF0E6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -332,6 +335,8 @@
 				041A31381C1685E90019229A /* JCSwitchTextViewController.m */,
 				4FEC3A961DF1502A00BEEA46 /* JCVerticalPageViewController.h */,
 				4FEC3A971DF1502A00BEEA46 /* JCVerticalPageViewController.m */,
+				4F26171C1DF7C24500D2B7CC /* JCMarqueeViewController.h */,
+				4F26171D1DF7C24500D2B7CC /* JCMarqueeViewController.m */,
 			);
 			name = CustomView;
 			sourceTree = "<group>";
@@ -527,6 +532,7 @@
 				04844E411C06BFDD00DC7A51 /* JCScrollViewController.m in Sources */,
 				4FEC3A981DF1502A00BEEA46 /* JCVerticalPageViewController.m in Sources */,
 				04F926411C1175C1001CAEB4 /* JCImageSliderViewController.m in Sources */,
+				4F26171E1DF7C24500D2B7CC /* JCMarqueeViewController.m in Sources */,
 				049BCC881BFEF3EC004E93AC /* main.m in Sources */,
 				04844E531C07027400DC7A51 /* CircleSiderView.m in Sources */,
 			);

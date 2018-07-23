@@ -41,6 +41,7 @@ static NSString * const kIdentifierHomeCell = @"HomeCell";
     [self addName:@"图片轮播器" className:@"JCImageSliderViewController" isNibs:NO];
     [self addName:@"搜索框候选文字切换" className:@"JCSwitchTextViewController" isNibs:NO];
     [self addName:@"垂直分页" className:@"JCVerticalPageViewController" isNibs:NO];
+    [self addName:@"跑马灯" className:@"JCMarqueeViewController" isNibs:NO];
 }
 
 - (void)addName:(NSString *)name className:(NSString *)className isNibs:(BOOL)isNib {
